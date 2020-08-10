@@ -5,7 +5,7 @@ There are still many states in the USA which have very low to negligible rate of
 
 ### Executive Summary
 
-Objective of this project is to analysis past data of SAT and ACT participation rates across all the states, subject level performance of these test over 2017 & 2018 as well as conduct external research on SAT and ACT participation and state administration and schools's view about the SAT test and its value for their high school students. Extract the trends and insights to device and recommend an approach which is driven by data and successful best practices in the states with higher SAT participation rate, to improve SAT participation rate, state by state.
+Objective of this project is to do analysis of past data for SAT and ACT participation rates across all the states, subject level performance of these tests over 2017 & 2018 as well as conduct external research on SAT and ACT participation rates and state administration and schools's view about the SAT test and its value for their high school students. Extract the trends and insights to device and recommend an approach which is driven by data and successful best practices in the states with higher SAT participation rate, and can be used to improve penetration among states with SAT participation rate. 
 
 Contents table below provides the framework used to conduct this study and provide recommendations.
 
