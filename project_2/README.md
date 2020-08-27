@@ -16,7 +16,7 @@ Objective of this project is to use past housing dataset with sale price and app
 - **Phase 2 Modeling - Training & Evaluation**
 - **Phase 2 Submission of predictions to Kaggle**
 
-### Project Summary Report is provided at the bottom of this report.**
+### Project Summary Report is provided at the bottom of this report.
 
 '*Note: While listed in sequence, these activities listed above are iterative in nature, so the flow can be back and forth among these activities to ultimately to select the best features as predictors of the target variable, i.e. sale price.'*
 
@@ -59,7 +59,7 @@ For **Phase 2** of feature selection and modeling
 
 **Datasets submitted**
 - '../datasets/submission.csv'       <== 'Intial submission with just one predictor'
-- '../datasets/submission_lasso.csv' <== 'Submission with predictions from phase 1 lassoCV model'
+- '../datasets/submission_lassoCV.csv' <== 'Submission with predictions from phase 1 lassoCV model'
 - '../datasets/submission_lassoCV_p2.csv' <== 'Phase 2 submission with predictions from lassoCV model'
 - '../datasets/submission_lr_p2.csv' <== 'Phase 2 submission with predictions from lr model'
 
@@ -176,4 +176,4 @@ There were multiple iteration of features selection and adjustment in level of o
 The best combination of feature and SalePrice outlier was used for the final selection among the submisions on Kaggle i.e **submission_lr_p2.csv**.
 
 ## Conclusion:
-**For the training data that was provided for this competition, Linear Regression model performed best through combination of conducting feature selection through EDA, feature Engineering, and list of features with zero coefficient provides by LassoCV model.**
+**For the training data that was provided for this competition, Linear Regression model to predict Sale Price, performed best through combination of conducting feature selection through EDA, feature Engineering, and list of features with zero coefficient provides by LassoCV model.**
