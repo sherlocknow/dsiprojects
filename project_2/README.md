@@ -116,10 +116,10 @@ For **Phase 2** of feature selection and modeling
 - MSE of LR on X_test  data: 895969100.0306927
 - **RMSE of LR on X_testdata: 29932.742941980654**
 
-<u>Findings from LR modeling</u>
+<u>Findings from LR Model</u>
 - LR model has performed better than the baseline model
 - LR model was marginally overfitting as per R2 and MSE scores.
-- Residual analysis was conducted on the lr model prediction and two of the LINE assumptions were validated.
+- Residual analysis was conducted on the lr model prediction and two of the LINE assumptions were evaluated. Although it can't be concluded with certainity however, distribution Curve of residuals being very close to normal, scatter plot along with actual values being very close to linear shape and scatter plot with predicted values being symetrical roughly indicates that model is quite well balanced and will generalize quite well
 
 **RidgeCV Model with CV=5 and alpha range of logspace(0.1, 10, 100)**
 - Optimal alpha value suggested by ridgeCV with cv=5: 398.1071705534973
@@ -129,7 +129,7 @@ For **Phase 2** of feature selection and modeling
 - MSE from ridgeCV on X_test_scaled: 893154257.6903589
 - **RMSE from ridgeCV on X_test_scaled: 29885.68650190855**
 
-<u>Findings from RidgeCV model</u>
+<u>Findings from RidgeCV Model</u>
 - RidgeCV RMSE score are marginally better than the LR RMSE scores.
 
 **LassoCV Model with number of alphas as 100**
@@ -140,7 +140,7 @@ For **Phase 2** of feature selection and modeling
 - MSE from lassoCV on X_test_scaled:882055383.8068427
 - RMSE from lassoCV on X_test_scaled:29699.41723008791
 
-<u>Findings from LassoCV model</u>
+<u>Findings from LassoCV Model</u>
 - RMSE score for LassoCV was marginally better than RidgeCV and LR models.
 - Out of 52, 17 features were allocated zero coefficient value.
 - While 'Garage Area' had higher corr coef with SalePrice, however 'Lot Area' has higher lassCv coef than 'Garage Area'. That could be explained due to high collinearity between 'Garage Area' and 'Garage Cars'.
@@ -171,9 +171,9 @@ For **Phase 2** of feature selection and modeling
 - Further reduction in the SalePrice outliers observation was done.
 
 ### Phase 2 Modeling
-There were multiple iteration of features selection and adjustment in level of outliers reduction and as documented in phase 2 modeling notebook as well, the RMSE score for phase 2 - Lr and LassoCV models were better than phase 1 - LR and LassoCV score. If more time was available, I would have explored the interaction terms among the features and its impact on the performance of the models.
+There were multiple iteration of features selection and adjustment in level of outliers reduction and as documented in phase 2 modeling notebook as well, the RMSE score for phase 2 - Lr and LassoCV models were better than phase 1 - LR and LassoCV score. If more time was available,more could have been explored about interaction terms among the features and its impact on the performance of the models.
 
 The best combination of feature and SalePrice outlier was used for the final selection among the submisions on Kaggle i.e **submission_lr_p2.csv**.
 
 ## Conclusion:
-**For the training data that was provided for this competition, Linear Regression model to predict Sale Price, performed best through combination of conducting feature selection through EDA, feature Engineering, and list of features with zero coefficient provides by LassoCV model.**
+**For the training data that was provided for this competition, the Linear Regression model that is well balanced and generalizes well could be built through combination of conducting detailed feature selection through EDA, feature Engineering, and regularization by LassoCV model.**
