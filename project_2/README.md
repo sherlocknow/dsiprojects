@@ -176,4 +176,6 @@ There were multiple iteration of features selection and adjustment in level of o
 The best combination of feature and SalePrice outlier was used for the final selection among the submisions on Kaggle i.e **submission_lr_p2.csv**.
 
 ## Conclusion:
-**For the training data that was provided for this competition, the Linear Regression model that is well balanced and generalizes well could be built through combination of conducting detailed feature selection through EDA, feature Engineering, and regularization by LassoCV model.**
+** From the linear regression modeling conducted, the most influencial features are overall quality and ground living area and neighborhood.
+
+For the training data that was provided for this competition, the Linear Regression model that is well balanced and generalizes well could be built through combination of conducting detailed feature selection through EDA, feature Engineering, and regularization by LassoCV model.**
