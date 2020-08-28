@@ -1,7 +1,7 @@
 # Project 2 - Ames Housing Data and Kaggle Challenge - Vikas Kalia
 
 ## Problem Statement
-City of Boston has very comprehensive set of data on the sales transactions of the houses across some of its neighborhoods. Given the rich quality of the data, there is an opportunity to use data science modeling techniques to predict sale price for any new property that comes up for sale in these neighborhoods. Challenge of this project is to conduct a detailed EDA & feature engineering with very high number of features available with the datasets.
+Iowa's Amex Assessor's office has a very comprehensive set of data on the sales transactions of the houses across some of its neighborhoods. Given the rich quality of the data, there is an opportunity to use data science modeling techniques to predict sale price for any new property that comes up for sale in these neighborhoods. Challenge of this project is to conduct a detailed EDA & feature engineering with very high number of features available with the datasets.
 
 ### Executive Summary
 Objective of this project is to use past housing dataset with sale price and apply linear regression modeling after data cleaning, preprocessing, feature engineering and exploratory data analysis. Through model evaluation process, regularization techniques like Ridge and Lasso will be leveraged to tune the model to predict sale price of the house provided in the test dataset. Finally, summary of the analysis of modeling process will be documented and predicted sale price for houses in the test dataset will be submitted to Kaggle to get root mean square error of the predicted sale prices.
