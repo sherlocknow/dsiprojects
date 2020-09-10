@@ -12,8 +12,7 @@ Data science framework is leveraged to scrape the posts from two subriddits of r
 - **Import Data Science Libraries**
 - **Download posts from r/CreditCards and r/CRedit**
 - **Conduct EDA and data cleaning and feature engineering**
-- **Phase 1 Modeling - Training & Evaluation**
-- **Phase 2 Modeling - Training & Evaluation**
+- **Modeling - Training & Evaluation**
 - **Conclusions and Recommendations**
 
 ### APIs
@@ -32,13 +31,10 @@ Credit Score Posts : https://www.reddit.com/r/CRedit.json
 ../data/post_cr.csv.    => saved for futher ongoing reference for EDA, Data Transformation and Modelin
 ../data/comb_cc_cr.csv  => saved combined list of subreddits
 
-### Phase 1 - Modeling Approach
+### Modeling Approach
 As per the problem statement we are only trying to correctly classify the subreddit correctly. so the only measure used to evaluate the models will be accuracy of classificaiton. Two modeling techniques i.e. Naive Bayes and Logistic Regression are applied on features vectors created by CountVectorizer as well as TF-IDF word vectorizer.
 Each model will evaluated with cross_validation method, confusion matrix and Logistic Regression models will be tuned using GridSearchCV method.
 **Note:** CreditCards is designated positive class and CRedit is designated negative class
-
-### Phase 2 - Modeling Approach
-This phase removes the most comman words across both classes and models on new words vectors built with CountVectorizer and TD-IDF vectorizers. It also used min_def value to be 5 and ngram range to be (1,2) for both word vectorizers.
 
 ###  Conclusions
 
@@ -47,4 +43,4 @@ This phase removes the most comman words across both classes and models on new w
 ### Recommendations
 - **More analysis can be done to identify common words across the subreddits**
 - **Techniques like pipeline & GridSearch could be leveraged for estimating hyper-parameters for word vectorizers.**
-- **As first version of the nlp classification model is ready, team could evaluate posts related to Credit Cards on other social media sites with this classifier.** 
+- **As first version of the nlp classification model is ready, team could evaluate posts related to Credit Cards on other social media sites with this classifier.**
