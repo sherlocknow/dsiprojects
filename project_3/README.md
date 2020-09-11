@@ -5,7 +5,7 @@ I work in the credit card industry and my marketing and legal team would like to
 So there is an opportunity to build a predictive model which is able to classify any new reddit posts in r/CreditCards and r/CRedit subreddits, that should belong to Credit Cards for marketing and legal teams to review.
 
 ## Executive Summary
-Data science framework is leveraged to scrape the posts from two subriddits of reddit.com. Data is then cleaned, and transformed for exploratory data analysis. Word vectorizers are leveraged to engineer pots into word vectors. NPL classifier Naive Bayes as well as Logistic regression are used to build model on word vectors. Evaluation techniques like confusion matrix, K-fold cross validation, coefficient analysis, probability distribution and roc_auc curve are leveraged. Finally, accuracy and roc_auv scores are used as metric to determine the model which is best suited to classify Credit Card posts.
+Data science framework is leveraged to scrape the posts from two subriddits of reddit.com. Data is then cleaned, and transformed for exploratory data analysis. Word vectorizers are leveraged to engineer pots into word vectors. NPL classifier Naive Bayes as well as Logistic regression are used to build model on word vectors. Evaluation techniques like confusion matrix, K-fold cross validation, probability distribution and roc_auc curve are leveraged. Finally, accuracy and roc_auv scores are used as metric to determine the model which is best suited to classify Credit Card posts.
 
 
 ### Contents table below provides the framework used to build this predictive model.
