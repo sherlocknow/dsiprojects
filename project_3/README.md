@@ -1,8 +1,7 @@
 ## Project 3: Web APIs & Classification - Vikas Kalia
 
 ## Problem Statement
-I work in the credit card industry and my marketing and legal team would like to review social media posts like Reddit site for current discussion on credit cards. However, many times the posts under r/CRedit subreddit are actually relevant to Credit Card business.
-So there is an opportunity to build a predictive model which is able to classify any new reddit posts in r/CreditCards and r/CRedit subreddits, that should belong to Credit Cards for marketing and legal teams to review.
+I work in the credit card industry and my marketing and legal team would like to review social media posts at reddit.com for current discussion on credit cards under r/CreditCards subreddit. However, many times the posts under r/CRedit subreddit are actually relevant to Credit Card business as well.  So there is an opportunity to build a predictive model, which is able to classify any new reddit posts in r/CreditCards and r/CRedit subreddits, that provide a more comprehensive insights on what is  being talked about Credit Cards, for marketing and legal teams to review.
 
 ## Executive Summary
 Data science framework is leveraged to scrape the posts from two subriddits of reddit.com. Data is then cleaned, and transformed for exploratory data analysis. Word vectorizers are leveraged to engineer pots into word vectors. NPL classifier Naive Bayes as well as Logistic regression are used to build model on word vectors. Evaluation techniques like confusion matrix, K-fold cross validation, probability distribution and roc_auc curve are leveraged. Finally, accuracy and roc_auv scores are used as metric to determine the model which is best suited to classify Credit Card posts.
@@ -38,9 +37,10 @@ Each model will evaluated with cross_validation method, confusion matrix and Log
 
 ###  Conclusions
 
-**After evaluating and tuning Naive Bayes and Logistic Regression model and using accuracy and roc_auc scores, it is concluded that model built with Logistic regression and Tf-IDF Word vectorizer will be used for future selection of subreddits r/CreditCards & r/Credit from reddit to have one list of posts which is relavent to Credit Card business, for marketing and legal teams to review.**
+**After evaluating and tuning Naive Bayes and Logistic Regression model and using accuracy and roc_auc scores, it is concluded that model built with Logistic regression and Tf-IDF Word vectorizer will be used for future selection of subreddits r/CreditCards & r/Credit from reddit to have one list of posts which is relevant to Credit Card business, for marketing and legal teams to review.**
 
 ### Recommendations
+- **Use different thresh hold of probability to increase True Positives-CreditCards, even at the cost having some extra Credit posts for teams to review.**
 - **More analysis can be done to identify common words across the subreddits**
 - **Techniques like pipeline & GridSearch could be leveraged for estimating hyper-parameters for word vectorizers.**
 - **As first version of the nlp classification model is ready, team could evaluate posts related to Credit Cards on other social media sites with this classifier.**
